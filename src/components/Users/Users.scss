@@ -1,0 +1,45 @@
+.users {
+  background-color: #fff;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(0, 0, 0, 0.03);
+  display: grid;
+  height: 26.25rem;
+  overflow: scroll;
+  padding: 1rem;
+  position: relative;
+
+  &__wrap {
+    margin: auto 0;
+    padding-top: 1rem;
+    width: 100%;
+  }
+}
+
+.user {
+  align-items: center;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 1rem 1.5rem;
+  padding: 1rem 0;
+
+  &--end {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  ~ .user {
+    border-top: 1px solid #bebebe;
+  }
+
+  &__avatar {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    height: 4rem;
+    width: 4rem;
+  }
+
+  &__name {
+    display: inline-block;
+  }
+}

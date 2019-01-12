@@ -1,0 +1,65 @@
+.loading {
+    display: flex;
+    height: 4rem;
+    margin: auto;
+    width: 4rem;
+  
+    .circle {
+      display: flex;
+      margin: auto;
+  
+      &-0,
+      &-1,
+      &-2 {
+        background-color: #7eb932;
+        border-radius: 50%;
+        display: block;
+        opacity: 0.5;
+        position: absolute;
+        height: 1rem;
+        width: 1rem;
+      }
+  
+      &-0 {
+        margin: auto;
+        position: relative;
+      }
+  
+      &-1 {
+        animation: circle1 3000ms ease infinite;
+      }
+  
+      &-2 {
+        animation: circle2 3000ms ease 1000ms infinite;
+      }
+    }
+  }
+  
+  @keyframes circle1 {
+    0% {
+      opacity: 0;
+      transform: scale(2);
+    }
+    50% {
+      opacity: 0.3;
+    }
+    100% {
+      opacity: 0;
+      transform: scale(4);
+    }
+  }
+  
+  @keyframes circle2 {
+    0% {
+      opacity: 0;
+      transform: scale(2);
+    }
+    25% {
+      opacity: 0.3;
+    }
+    100% {
+      opacity: 0;
+      transform: scale(4);
+    }
+  }
+  
